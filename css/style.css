@@ -1,0 +1,61 @@
+.parent{
+    background-color: #F7ECDE;
+    height: 100vh;
+}
+h2{
+    font-size: 25px;
+    background-image: linear-gradient( #3ca55c, #b5ac49);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    position: relative;
+    isolation: isolate;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 20%; 
+    height: 25%;
+    bottom: 10px;
+    background-color: rgb(255, 166, 0) ;
+    transition: height 0.2s ease-in-out;
+    z-index: -1;
+}
+h1:hover::before{
+    height: 50%;
+}
+.bookmark{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+.box-conent {
+    width: 500px;
+    z-index: 10;
+}
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+    background-color: yellow;
+}
+.circles span:nth-child(3) {
+    background-color: green;
+}
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.form-control:focus {
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+::selection{
+    background-color:#d99c39;
+}
